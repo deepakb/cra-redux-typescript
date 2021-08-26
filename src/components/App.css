@@ -1,0 +1,16 @@
+.btn-primary-spacing {
+  margin-right: 5px;
+}
+
+.input-group {
+  width: 300px;
+}
+
+.center-input {
+  display: flex;
+  justify-content: center;
+}
+
+.input-area {
+  margin-bottom: 1rem;
+}
