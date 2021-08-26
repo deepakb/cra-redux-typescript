@@ -7,8 +7,8 @@ export const deposit = (amount: number) => {
     dispatch({
       type: ActionType.DEPOSIT,
       payload: amount
-    })
-  }
+    });
+  };
 }
 
 export const withdraw = (amount: number) => {
@@ -16,6 +16,6 @@ export const withdraw = (amount: number) => {
     dispatch({
       type: ActionType.WITHDRAW,
       payload: amount
-    })
-  }
+    });
+  };
 }
