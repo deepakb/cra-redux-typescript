@@ -1,6 +1,6 @@
-import { Dispatch } from "redux"
-import { ActionType } from "../action-types"
-import { Action } from "../actions/index"
+import { Dispatch } from 'redux';
+import { ActionType } from '../action-types';
+import { Action } from '../actions/index';
 
 export const deposit = (amount: number) => {
   return (dispatch: Dispatch<Action>) => {
@@ -9,7 +9,7 @@ export const deposit = (amount: number) => {
       payload: amount
     });
   };
-}
+};
 
 export const withdraw = (amount: number) => {
   return (dispatch: Dispatch<Action>) => {
@@ -18,4 +18,4 @@ export const withdraw = (amount: number) => {
       payload: amount
     });
   };
-}
+};

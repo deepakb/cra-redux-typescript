@@ -6,12 +6,7 @@ import Wallet from './Wallet';
 import './App.css';
 
 const App: React.FC = (): JSX.Element => {
-  return (
-    <Layout
-      header={<Header />}
-      wallet={<Wallet />}
-    />
-  )
+  return <Layout header={<Header />} wallet={<Wallet />} />;
 };
 
 export default App;

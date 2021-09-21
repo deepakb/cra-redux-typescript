@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import walletReducer from "./walletReducer";
+import walletReducer from './walletReducer';
 
 const reducers = combineReducers({
   wallet: walletReducer

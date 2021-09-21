@@ -24,20 +24,22 @@ const Wallet: React.FC = (): JSX.Element => {
 
   const withdrawHandler = (): void => {
     withdraw(amount);
-  }
+  };
 
   return (
     <>
-      <Card className="justify-content-center">
+      <Card className='justify-content-center'>
         <Card.Body>
-          <Card className="text-center">
-            <Card.Header>Total Balance <BiWalletAlt />: {wallet}</Card.Header>
+          <Card className='text-center'>
+            <Card.Header>
+              Total Balance <BiWalletAlt />: {wallet}
+            </Card.Header>
             <Card.Body>
               <Card.Title>Enter amount to deposit or withdraw money</Card.Title>
-              <div className="text-center center-input input-area">
+              <div className='text-center center-input input-area'>
                 <InputGroup>
                   <FormControl
-                    aria-label="Dollar amount (with dot and two decimal places)"
+                    aria-label='Dollar amount (with dot and two decimal places)'
                     onChange={changeHanlder}
                     value={amount}
                   />
@@ -46,20 +48,17 @@ const Wallet: React.FC = (): JSX.Element => {
                 </InputGroup>
               </div>
               <Button
-                variant="primary"
-                className="btn-primary-spacing"
+                variant='primary'
+                className='btn-primary-spacing'
                 onClick={depositHandler}
               >
                 deposit
               </Button>
-              <Button
-                variant="primary"
-                onClick={withdrawHandler}
-              >
+              <Button variant='primary' onClick={withdrawHandler}>
                 withdraw
               </Button>
             </Card.Body>
-            <Card.Footer className="text-muted">
+            <Card.Footer className='text-muted'>
               &copy;mywallet.dev 2021
             </Card.Footer>
           </Card>
